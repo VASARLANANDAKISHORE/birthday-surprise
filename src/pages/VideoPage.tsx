@@ -14,11 +14,14 @@ export default function VideoPage() {
     try {
       if (v.paused) {
         await v.play();
+        setIsPlaying(true);
       } else {
         v.pause();
+        setIsPlaying(false);
       }
     } catch (err) {
-      console.error("Video play failed:", err);
+      console.error('Video play failed:', err);
+      setIsPlaying(false);
     }
   };
 
@@ -77,15 +80,15 @@ export default function VideoPage() {
           <video
             ref={videoRef}
             className="aspect-video w-full bg-black object-cover"
+            src="/video.mp4"
             onTimeUpdate={handleTimeUpdate}
             onPlay={() => setIsPlaying(true)}
             onPause={() => setIsPlaying(false)}
             onEnded={() => setIsPlaying(false)}
+            onClick={togglePlay}
             playsInline
-            preload="auto"
-          >
-            <source src="/video.mp4" type="video/mp4" />
-          </video>
+            preload="metadata"
+          />
 
           {/* Center play overlay */}
           {!isPlaying && (

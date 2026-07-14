@@ -30,7 +30,7 @@ export const GALLERY_IMAGES = [
   {
     src: '/pics/WhatsApp_Image_2026-07-10_at_11.46.29_AM.jpeg',
     emoji: '📸',
-    caption: 'No matter how bad a phase it is, I will always choose you. ✨',
+    caption: 'No matter how bad phase it is, I will always choose you.',
   },
   {
     src: '/pics/WhatsApp_Image_2026-07-10_at_11.46.29_AM_(1).jpeg',
@@ -48,7 +48,7 @@ export const GALLERY_IMAGES = [
     caption: 'Some people feel like sunshine; you feel like home. 🤍',
   },
   {
-    src: '/pics/WhatsApp_Image_2026-07-10_at_11.46.28_AM copy.jpeg',
+    src: '/pics/WhatsApp_Image_2026-07-10_at_11.46.31_AM.jpeg',
     emoji: '🪞',
     caption: 'If I had to choose one person to carry through every chapter of my life, it\'d be you. ❤️✨',
   },
